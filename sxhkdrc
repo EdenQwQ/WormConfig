@@ -1,6 +1,6 @@
 # Rofi
-super + {p,w,m,x,r,s}
-	sh ~/.config/qtile/rofi/bin/{launcher,windows,mpd,powermenu,asroot,screenshot}
+super + {p,w,m,x,s}
+	~/.config/qtile/rofi/bin/{launcher,windows,mpd,powermenu,screenshot}
 
 # Launch Apps
 super + shift + {f,w,e}
@@ -36,11 +36,11 @@ XF86AudioMute
 
 # Reload keybindings
 super + ctrl + r
-	pkill -USR1 -x sxhkd
+	worm
 
 # Quit worm
 ctrl + alt + q
-	killall worm
+	pkill worm
 
 # Close app
 super + q
