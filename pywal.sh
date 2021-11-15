@@ -6,7 +6,7 @@ wal -i $(sed -n 's/file=//p' ~/.config/nitrogen/bg-saved.cfg) -q -t
 
 if [[ "$WMNAME" == "worm" ]]; then
 
-    PFILE="$HOME/.config/polybar/hack/colors.ini"
+    PFILE="$HOME/.config/worm/polybar/colors.ini"
 
     . "$HOME/.cache/wal/colors.sh"
 

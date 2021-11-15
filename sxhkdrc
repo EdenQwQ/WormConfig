@@ -34,7 +34,7 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer set Master toggle
 
-# Reload keybindings
+# Restart worm
 super + ctrl + r
 	worm
 
@@ -57,3 +57,7 @@ super + {1,2,3,4}
 # Switch tag
 super + shift + {1,2,3,4}
 	wormc switch-tag {1,2,3,4}
+
+# Pywal apply
+super + ctrl + w
+	~/.config/worm/pywal.sh
