@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-WMNAME=`wmctrl -m | sed -n 's/Name: //p'`
-
 wal -i $(sed -n 's/file=//p' ~/.config/nitrogen/bg-saved.cfg) -q -t
 
 PFILE="$HOME/.config/worm/polybar/colors.ini"

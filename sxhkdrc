@@ -1,6 +1,6 @@
 # Rofi
-super + {p,w,m,x,s}
-	~/.config/qtile/rofi/bin/{launcher,windows,mpd,powermenu,screenshot}
+super + {p,w,x,s}
+	~/.config/qtile/rofi/bin/{launcher,windows,powermenu,screenshot}
 
 # Launch Apps
 super + shift + {f,w,e}
@@ -8,7 +8,7 @@ super + shift + {f,w,e}
 
 super + Return
 	kitty
-##---------- System ----------##
+
 # Take a screenshot
 Print
 	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
@@ -51,12 +51,20 @@ super + f
 	wormc maximize-active-client
 
 # Switch active tag
-super + {1,2,3,4}
-	wormc switch-active-window-tag {1,2,3,4}
+super + {1,2,3,4,5,6,7,8,9}
+	wormc switch-tag {1,2,3,4,5,6,7,8,9}
 
 # Switch tag
-super + shift + {1,2,3,4}
-	wormc switch-tag {1,2,3,4}
+super + shift + {1,2,3,4,5,6,7,8,9}
+	wormc move-active-tag {1,2,3,4,5,6,7,8,9}
+
+# Set master windows
+super + m
+	wormc master-active
+
+# Float a window
+super + shift + space
+	wormc float-active
 
 # Pywal apply
 super + ctrl + w
