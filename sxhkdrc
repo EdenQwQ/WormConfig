@@ -3,8 +3,8 @@ super + {p,w,x,s}
 	~/.config/qtile/rofi/bin/{launcher,windows,powermenu,screenshot}
 
 # Dmenu
-super + ctrl + {d,v,m}
-	~/scripts/dmenu/scripts/dmenu_{run,vim,man}.sh
+super + ctrl + {d,v,m,s}
+	~/scripts/dmenu/scripts/dmenu_{run,vim,man,search}.sh
 
 # Launch Apps
 super + shift + {f,w,e}
@@ -48,7 +48,7 @@ ctrl + alt + q
 
 # Close app
 super + q
-	wormc close-active-client
+	wormc kill-active-client
 
 # Maximize app
 super + f
@@ -73,3 +73,6 @@ super + shift + space
 # Pywal apply
 super + ctrl + w
 	~/.config/worm/pywal.sh
+
+# button1
+#     xte "keydown Alt" "keyup Alt"
